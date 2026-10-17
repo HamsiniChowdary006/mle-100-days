@@ -49,4 +49,47 @@ pythom -m pytest -v
 
 
 
-# Task 2: 
+# Task 2: Vectors and Similarity
+
+## Step 1
+- Set up your folder
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\activate
+
+python -m pip install numpy pytest scikit-learn
+```
+
+- Create these three files:
+  - `impl.py`
+  - `test_impl.py`
+  - `variation_1.py`
+
+## Step 2
+- Implement cosine similarity and Euclidean distance from scratch.
+- Write `cosine_similarity(query, vectors)` to calculate the cosine similarity between a query vector and multiple vectors.
+- Write `euclidean_distance(query, vectors)` to calculate the Euclidean distance between a query vector and multiple vectors.
+- Use NumPy vectorized operations instead of Python loops.
+- Handle zero vectors without producing `NaN` values in cosine similarity.
+
+## Step 3
+- Test the implementation.
+- Write tests in `test_impl.py` using pytest.
+- Test cosine similarity.
+- Test Euclidean distance.
+- Test identical vectors.
+- Test zero vectors.
+- Test opposite vectors.
+- Compare the implementation against library results where appropriate.
+
+```powershell
+python -m pytest -v
+```
+
+## Step 4
+- Variation and Experiments
+- Demonstrate how cosine similarity and Euclidean distance can rank vectors differently.
+- Normalize the vectors and compare the rankings again.
+- Observe how normalization affects the results.
+
